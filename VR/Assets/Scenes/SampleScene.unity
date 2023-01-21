@@ -385,6 +385,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemList: {fileID: 850221022}
+  description: 'Une perceuse sans embout,
+
+    dont la batterie est vide.'
 --- !u!1 &152974760
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,7 +967,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1000010148899198, guid: 3fe5e5b169873104ca3a52a601994ea5, type: 3}
       propertyPath: m_Name
-      value: Hammer_02
+      value: Marteau
       objectReference: {fileID: 0}
     - target: {fileID: 4000012657785910, guid: 3fe5e5b169873104ca3a52a601994ea5, type: 3}
       propertyPath: m_RootOrder
@@ -1854,6 +1857,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 6492334850153107009, guid: 50aa4923f689eb54d800ad627b25cc9c,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492334850153107009, guid: 50aa4923f689eb54d800ad627b25cc9c,
+        type: 3}
+      propertyPath: m_Anchor
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492334850153107009, guid: 50aa4923f689eb54d800ad627b25cc9c,
+        type: 3}
+      propertyPath: m_Alignment
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492334850153107009, guid: 50aa4923f689eb54d800ad627b25cc9c,
+        type: 3}
+      propertyPath: m_CharacterSize
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7046595207105841940, guid: 50aa4923f689eb54d800ad627b25cc9c,
         type: 3}
       propertyPath: m_RootOrder
@@ -1928,6 +1951,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8846180520271203871, guid: 50aa4923f689eb54d800ad627b25cc9c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.438
+      objectReference: {fileID: 0}
+    - target: {fileID: 8846180520271203871, guid: 50aa4923f689eb54d800ad627b25cc9c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.459
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3936989715158888056, guid: 50aa4923f689eb54d800ad627b25cc9c, type: 3}
@@ -2388,7 +2421,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1000012695253110, guid: f5a2d19d564785d45a6207078113bcaa, type: 3}
       propertyPath: m_Name
-      value: Drill
+      value: Perceuse
       objectReference: {fileID: 0}
     - target: {fileID: 4000011496336782, guid: f5a2d19d564785d45a6207078113bcaa, type: 3}
       propertyPath: m_RootOrder
@@ -2735,3 +2768,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemList: {fileID: 850221022}
+  description: Un marteau de chantier.

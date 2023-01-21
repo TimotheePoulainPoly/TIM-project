@@ -6,8 +6,10 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class EventHandler : MonoBehaviour
 {
     [SerializeField] private GameObject itemList;
+    [SerializeField][TextArea(5,10)] private string description;
     private Vector3 initialPosition;
     private Quaternion initialRotation;
+    private bool known = false;
 
     public void OnHoverEntered(HoverEnterEventArgs args)
     {
@@ -26,6 +28,10 @@ public class EventHandler : MonoBehaviour
         Debug.Log($"{args.interactorObject} grabbed " + this.gameObject.name);
         initialPosition = this.transform.position;
         initialRotation = this.transform.rotation;
+        if (!known) {
+            itemList.GetComponent<ItemListHandler>().AddNewItem(this.gameObject.name, this.description);
+            known = true;
+        }
     }
  
     public void OnSelectExited(SelectExitEventArgs args)
