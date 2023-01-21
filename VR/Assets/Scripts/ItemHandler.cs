@@ -14,26 +14,17 @@ public class ItemHandler : MonoBehaviour
         transform.GetChild(1).GetComponent<TextMeshPro>().text = realItem.GetComponent<EventHandler>().description;
     }
 
-    public void OnHoverEntered(HoverEnterEventArgs args)
-    {
-        Debug.Log($"{args.interactorObject} selected " + this.gameObject.name);
-        GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
-    }
-
-    public void OnHoverExited(HoverExitEventArgs args)
-    {
-        Debug.Log($"{args.interactorObject} selected " + this.gameObject.name);
-        GetComponent<Renderer>().material.DisableKeyword("_EMISSION");
-    }
     public void OnSelectEntered(SelectEnterEventArgs args)
     {
         Debug.Log($"{args.interactorObject} selected " + this.gameObject.name);
         GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
+        realItem.GetComponent<EventHandler>().GrabbedFromList();
     }
 
     public void OnSelectExited(SelectExitEventArgs args)
     {
         Debug.Log($"{args.interactorObject} selected " + this.gameObject.name);
         GetComponent<Renderer>().material.DisableKeyword("_EMISSION");
+        realItem.GetComponent<EventHandler>().UngrabbedFromList();
     }
 }
