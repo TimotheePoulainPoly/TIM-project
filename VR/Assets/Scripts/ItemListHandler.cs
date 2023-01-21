@@ -11,7 +11,7 @@ public class ItemListHandler : MonoBehaviour
         Debug.Log("Adding new item...");
         GameObject newItem = Instantiate(listItemPrefab);
         newItem.transform.SetParent(this.transform);
-        newItem.transform.localPosition = new Vector3(0f, 0.312f-(count*0.194f), -0.41f);
+        newItem.transform.localPosition = new Vector3(0f, 0.312f-(count*0.179f), -0.41f);
         newItem.transform.localScale = new Vector3(0.85f, 0.18f, 0.35f);
         newItem.transform.localRotation = new Quaternion(0f, 0f, 0f, 0f);
         newItem.GetComponent<ItemHandler>().SetData(item);
