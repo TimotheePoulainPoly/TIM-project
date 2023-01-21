@@ -6,7 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class EventHandler : MonoBehaviour
 {
     [SerializeField] private GameObject itemList;
-    [SerializeField][TextArea(5,10)] private string description;
+    [SerializeField][TextArea(5,10)] public string description;
     private Vector3 initialPosition;
     private Quaternion initialRotation;
     private bool known = false;
@@ -29,7 +29,7 @@ public class EventHandler : MonoBehaviour
         initialPosition = this.transform.position;
         initialRotation = this.transform.rotation;
         if (!known) {
-            itemList.GetComponent<ItemListHandler>().AddNewItem(this.gameObject.name, this.description);
+            itemList.GetComponent<ItemListHandler>().AddNewItem(this.gameObject);
             known = true;
         }
     }

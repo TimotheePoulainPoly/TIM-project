@@ -1860,17 +1860,17 @@ PrefabInstance:
     - target: {fileID: 6492334850153107009, guid: 50aa4923f689eb54d800ad627b25cc9c,
         type: 3}
       propertyPath: m_Text
-      value: 
+      value: List of evidences
       objectReference: {fileID: 0}
     - target: {fileID: 6492334850153107009, guid: 50aa4923f689eb54d800ad627b25cc9c,
         type: 3}
       propertyPath: m_Anchor
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6492334850153107009, guid: 50aa4923f689eb54d800ad627b25cc9c,
         type: 3}
       propertyPath: m_Alignment
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6492334850153107009, guid: 50aa4923f689eb54d800ad627b25cc9c,
         type: 3}
@@ -1955,15 +1955,14 @@ PrefabInstance:
     - target: {fileID: 8846180520271203871, guid: 50aa4923f689eb54d800ad627b25cc9c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.438
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8846180520271203871, guid: 50aa4923f689eb54d800ad627b25cc9c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.459
+      value: 0.446
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3936989715158888056, guid: 50aa4923f689eb54d800ad627b25cc9c, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50aa4923f689eb54d800ad627b25cc9c, type: 3}
 --- !u!1 &705507993
 GameObject:
@@ -2083,6 +2082,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7b8277021bd104ab901bfddb6f52e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  listItemPrefab: {fileID: 5253514371783218556, guid: 5b8e2bbdaae19ec42859ad8dcb39dce3,
+    type: 3}
+--- !u!65 &850221039
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850221022}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1.0000002}
+  m_Center: {x: 0, y: 0, z: -0.0000038146973}
 --- !u!1 &930483615
 GameObject:
   m_ObjectHideFlags: 0
