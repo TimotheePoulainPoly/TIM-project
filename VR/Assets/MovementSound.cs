@@ -14,7 +14,7 @@ public class MovementSound : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     if(this.transform.parent.GetComponent<Rigidbody>().velocity.magnitude > 0){
+     if(this.transform.parent.gameObject.GetComponent<Rigidbody>().velocity.magnitude > 0){
         this.transform.GetComponent<AudioSource>().Play();
      }
     }
